@@ -11,7 +11,7 @@ var express = require('express'),
 // mongoose.Promise = global.Promise;
 
 
-const string1=" "// add your database string here
+const string1="mongodb+srv://rohan9025:Susan@9025@cluster0-amyhz.mongodb.net/test?retryWrites=true&w=majority  "// add your database string here
 mongoose.connect(string1,{useNewUrlParser:true,useUnifiedTopology: true,useCreateIndex: true,useFindAndModify:false}) 
         .then(() => console.log( 'Database Connected' ))
         .catch(err => console.log( err ));
